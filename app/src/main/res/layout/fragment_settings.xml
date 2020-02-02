@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/blue"
+        android:layout_alignParentTop="true">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Settings"
+            android:textColor="@color/text"
+            android:textSize="24sp"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_change_distance"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/action_bar"
+        android:background="@drawable/settings_item_bg">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="maximum distance"
+            android:layout_centerVertical="true"
+            style="@style/text"
+            android:layout_marginStart="16dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txt_title"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="36dp"
+            android:text="5"
+            android:textSize="16sp"
+            android:textColor="#818080"/>
+    </RelativeLayout>
+</RelativeLayout>
